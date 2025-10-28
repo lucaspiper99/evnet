@@ -14,7 +14,7 @@ python train.py --subcorticalblock standard --with_voneblock --model_arch resnet
 
 # Training all EVResNet50 variants
 python train.py --subcorticalblock no-p-cells --with_voneblock --model_arch resnet-50 # No P cells
-python train.py --subcorticalblock no-m-cells --with_voneblock --model_arch resnet-50 # No P cells
+python train.py --subcorticalblock no-m-cells --with_voneblock --model_arch resnet-50 # No M cells
 python train.py --subcorticalblock no-light-adapt --with_voneblock --model_arch resnet-50 # No light adaptation
 python train.py --subcorticalblock no-contrast-norm --with_voneblock --model_arch resnet-50 # No contrast normalization
 python train.py --subcorticalblock no-noise --with_voneblock --model_arch resnet-50 # No subcortical noise
