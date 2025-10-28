@@ -9,7 +9,7 @@
 
 ## Model Weights
 
-We made available four sets of model weigths in [Zenodo](https://zenodo.org/records/17465273):
+We made four sets of model weights available in [Zenodo](https://zenodo.org/records/17465273):
 
 - [EVResNet50](https://zenodo.org/records/17465273/files/evresnet-50.pth?download=1)
 - [EVResNet50 + PRIME](https://zenodo.org/records/17465273/files/evresnet50+prime.pth?download=1)
@@ -37,7 +37,7 @@ evnet/
 
 ## Datasets Used
 
-| Dataset           | Perturbation             | URL                                                                                |
+| Dataset           | Perturbation             | Download Link                                                                      |
 |-------------------|--------------------------|------------------------------------------------------------------------------------|
 | ImageNet          | Adversarial (+ Clean)    | https://www.image-net.org/download.php                                             |
 | ImageNet-C        | Common image corruptions | https://zenodo.org/records/2235448                                                 |
@@ -53,9 +53,19 @@ The PRIME data augmentation module was based on the code fmor the [the original 
 
 ## Installation
 
-To install the `evnet` package run:
+To install the `evnet` package do:
 ```
 pip install git+https://github.com/lucaspiper99/evnet.git
+```
+
+To setup repository locally do:
+```
+git clone https://github.com/lucaspiper99/evnet.git
+cd evnet
+python -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip
+pip install -r requisites.txt
 ```
 
 ## Example Usage
@@ -68,7 +78,7 @@ vone_kwargs = get_vonekwargs(model_arch='resnet-50')
 model = EVNet(with_voneblock=True, model_arch=True, **subcort_kwargs, **vone_kwargs)
 ```
 
-The `train.sh` and `test.sh` bash scripts include several examples on training and testing EVNets.
+The [`train.sh`](./train.sh) and [`test.sh`](./test.sh) bash scripts include several examples on training and testing EVNets.
 
 ## BibTeX
 
