@@ -33,7 +33,7 @@ parser.add_argument(
     "--seed", default=42, type=int, help="RNG seed.",
 )
 parser.add_argument(
-    "--out_dir", type=str, help="Output directory for CSV file.",
+    "--out_dir", default='/path/to/out_dir', type=str, help="Output root directory where CSV file with results will be created"
 )
 parser.add_argument(
     "--devices", default="0", type=str, help="Device to use when training the model",

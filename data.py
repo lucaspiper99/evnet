@@ -104,7 +104,7 @@ def get_stylized16_imagenet(root, subcort_kwargs):
             parametric=True, return_ood=False
             )
 
-def get_imagenet_test_mask(test_path, imagenet_path='/media/imagenet'):
+def get_imagenet_test_mask(test_path, imagenet_path='/path/to/imagenet'):
     """Returns ImageNet-X test set logit mask.
 
     Args:

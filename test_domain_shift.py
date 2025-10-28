@@ -17,15 +17,13 @@ parser = argparse.ArgumentParser(
     description="Testing on domain-shift ImageNet datasets."
 )
 parser.add_argument(
-    "--data_dir", default="/media/generalstorage3/lapstorage/datasets/imagenet-r", type=str, help="Path to dataset root directory"
+    "--data_dir", default="/path/to/data_dir", type=str, help="Path to dataset root directory"
 )
 parser.add_argument(
-    "--out_dir", default='/media/generalstorage3/lapstorage/out', type=str,
-    help="Output root directory where CSV file with results will be created"
+    "--out_dir", default='/path/to/out_dir', type=str, help="Output root directory where CSV file with results will be created"
 )
 parser.add_argument(
-    "--ckpt_dir", default='/media/generalstorage3/lapstorage/out', type=str,
-    help="Root directory where model checkpoints are saved"
+    "--ckpt_dir", default='/path/to/ckpt_dir', type=str, help="Root directory where model checkpoints are saved"
 )
 parser.add_argument(
     "--imagenet", default="imagenet-c", type=str, help="Name of ImageNet dataset",

@@ -21,7 +21,7 @@ parser = argparse.ArgumentParser(
     description="ImageNet Training"
 )
 parser.add_argument(
-    "--data_dir", default="/media/imagenet/", type=str, help="Path to ImageNet data directory"
+    "--data_dir", default="/path/to/imagenet/", type=str, help="Path to ImageNet data directory"
 )
 parser.add_argument(
     "--use_ckpt", action="store_true", help="Whether to load the last checkpoint"
@@ -55,7 +55,7 @@ parser.add_argument(
     "--with_voneblock", action="store_true", help="Whether to include a VOneBlock in the model"
 )
 parser.add_argument(
-    "--out_dir", default='/media/generalstorage3/lapstorage/out', type=str,
+    "--out_dir", default='/path/to/out_dir', type=str,
     help="Output directory for model checkpoints and logs."
 )
 parser.add_argument(
