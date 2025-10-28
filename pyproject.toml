@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evnet"
+version = "0.1.0"
+description = "Explicitly Modeling Subcortical Vision with a Neuro-Inspired Front-End Improves CNN Robustness"
+authors = [{ name = "Lucas Piper", email = "lucaspiper@tecnico.ulisboa.pt" }]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.11"
+dependencies = [
+    "torch",
+    "torchvision",
+    "numpy",
+    "pandas",
+    "pyyaml",
+    "pillow",
+    "tqdm",
+    "scipy",
+    "scikit-optimize",
+    "adversarial-robustness-toolbox",
+    "einops",
+    "opt-einsum",
+]
+
+[project.urls]
+Homepage = "https://github.com/lucaspiper99/evnet"

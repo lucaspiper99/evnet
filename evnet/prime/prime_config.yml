@@ -1,0 +1,22 @@
+# PRIME ImageNet Configuration
+diffeo:
+    sT: 1.
+    rT: 1.
+    scut: 1.
+    rcut: 1.
+    cutmin: 2
+    cutmax: 500
+    alpha: 1.0
+color_jit:
+    cut: 500
+    T: 0.05
+    max_freqs: 20
+rand_filter:
+    kernel_size: 3
+    sigma: 4.0
+augmix:
+    all_ops: False
+    mixture_width: 3
+    mixture_depth: -1
+    no_jsd: True
+    severity: 1

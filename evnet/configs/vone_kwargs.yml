@@ -1,0 +1,30 @@
+resnet-50:
+  vone_stride: 4
+  simple_channels: 256
+  complex_channels: 256
+  vone_ksize: 31
+  sf_max: 8
+  sf_min: 0
+  vone_noise_mode: 'neuronal'
+  vone_noise_scale: 1
+  vone_noise_level: 0
+efficientnet-b0:
+  vone_stride: 2
+  simple_channels: 128
+  complex_channels: 128
+  vone_ksize: 31
+  sf_max: 8
+  sf_min: 0
+  vone_noise_mode: 'neuronal'
+  vone_noise_scale: 1
+  vone_noise_level: 0
+cornet-z:
+  vone_stride: 4
+  simple_channels: 256
+  complex_channels: 256
+  vone_ksize: 31
+  sf_max: 8
+  sf_min: 0
+  vone_noise_mode: 'neuronal'
+  vone_noise_scale: 1
+  vone_noise_level: 0

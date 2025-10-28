@@ -1,0 +1,19 @@
+epochs: 50
+lr: .05
+bn_momentum: .01
+weight_decay: .0001
+batch_size: 256
+label_smoothing: 0.1
+
+optimizer: SGD
+optimizer_kwargs:
+  momentum: .9
+
+scheduler: OneCycleLR
+scheduler_kwargs:
+  max_lr: .05
+  pct_start: .3
+  div_factor: 25
+  final_div_factor: 10000
+  epochs: 50
+  steps_per_epoch: 5004

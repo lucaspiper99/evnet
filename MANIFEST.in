@@ -1,0 +1,3 @@
+include evnet/configs/*
+include evnet/prime/*
+include evnet/tuning/*
