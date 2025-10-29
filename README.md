@@ -49,7 +49,7 @@ evnet/
 
 ## PRIME data augmentation
 
-The PRIME data augmentation module was based on the code fmor the [the original repository](https://github.com/amodas/PRIME-augmentations).
+The PRIME data augmentation module was based on the code from the [the original repository](https://github.com/amodas/PRIME-augmentations).
 
 ## Installation
 
@@ -58,7 +58,7 @@ To install the `evnet` package do:
 pip install git+https://github.com/lucaspiper99/evnet.git
 ```
 
-To setup repository locally do:
+To setup the repository locally do (UNIX):
 ```
 git clone https://github.com/lucaspiper99/evnet.git
 cd evnet
