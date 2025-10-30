@@ -34,6 +34,21 @@ evnet/
 └── prime/      # PRIME data augmentation module
 ```
 
+## Requirements
+
+- python >= 3.11
+- torch
+- torchvision
+- numpy
+- pandas
+- yaml
+- pillow
+- tqdm
+- scipy
+- scikit-optimize
+- adversarial-robustness-toolbox
+- einops
+- opt-einsum
 
 ## Datasets Used
 
